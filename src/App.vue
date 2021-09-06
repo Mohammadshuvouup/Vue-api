@@ -1,0 +1,49 @@
+<template>
+  <div id="app">
+    <div id="nav">
+      <router-link></router-link>
+      <router-link></router-link>
+    </div>
+    <router-view/>
+  </div>
+</template>
+<style lang="scss">
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+}
+
+#nav {
+  padding: 0px;
+  .navbar-expand-lg .navbar-collapse {
+    margin-left: 15rem;
+  
+    
+  }
+  .navbar-brand {
+    color: black;
+    margin-left: 3rem;
+     text-decoration: none;
+}
+img{
+  width: 100%;
+  display: block;
+}
+.footer{
+  background-color: black;
+}
+
+
+  a {
+    // font-weight: bold;
+    color: #2c3e50;
+
+    &.router-link-exact-active {
+      color: #42b983;
+    }
+  }
+}
+</style>
